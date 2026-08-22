@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Tokens de cor — modo claro e escuro.
+ * Primário: grafite-azulado (#1F3A5F). Accent: âmbar de sinalização (#E8A33D).
+ */
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 215 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 12%;
+
+    --primary: 212 45% 24%;
+    --primary-foreground: 40 20% 97%;
+
+    --secondary: 210 16% 92%;
+    --secondary-foreground: 215 25% 15%;
+
+    --accent: 36 78% 58%;
+    --accent-foreground: 215 30% 10%;
+
+    --muted: 210 16% 92%;
+    --muted-foreground: 215 12% 40%;
+
+    --destructive: 4 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 152 45% 32%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 214 15% 85%;
+    --input: 214 15% 85%;
+    --ring: 212 45% 24%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 216 22% 9%;
+    --foreground: 40 15% 94%;
+
+    --card: 215 22% 12%;
+    --card-foreground: 40 15% 94%;
+
+    --popover: 215 22% 12%;
+    --popover-foreground: 40 15% 94%;
+
+    --primary: 36 78% 58%;
+    --primary-foreground: 215 30% 10%;
+
+    --secondary: 215 18% 18%;
+    --secondary-foreground: 40 15% 94%;
+
+    --accent: 36 78% 58%;
+    --accent-foreground: 215 30% 10%;
+
+    --muted: 215 18% 18%;
+    --muted-foreground: 214 10% 65%;
+
+    --destructive: 4 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 152 40% 45%;
+    --success-foreground: 215 30% 10%;
+
+    --border: 215 15% 20%;
+    --input: 215 15% 20%;
+    --ring: 36 78% 58%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
