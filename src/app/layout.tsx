@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Big_Shoulders_Text, Inter, JetBrains_Mono } from "next/font/google";
+import { Oswald, Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/shared/theme-provider";
 import { QueryProvider } from "@/components/shared/query-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { siteConfig } from "@/config/site";
 import "./globals.css";
 
-const display = Big_Shoulders_Text({
+const display = Oswald({
   subsets: ["latin"],
   variable: "--font-display",
-  weight: ["600", "700", "800"],
+  weight: ["500", "600", "700"],
 });
 
 const body = Inter({ subsets: ["latin"], variable: "--font-body" });
