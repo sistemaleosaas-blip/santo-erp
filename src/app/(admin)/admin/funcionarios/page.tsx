@@ -75,7 +75,7 @@ export default async function FuncionariosPage() {
                 ) : (
                   <tr>
                     <td colSpan={7} className="px-4 py-10 text-center text-muted-foreground">
-                      Nenhum funcionário cadastrado ainda. Clique em "Novo Funcionário" para começar.
+                      Nenhum funcionário cadastrado ainda. Clique em &quot;Novo Funcionário&quot; para começar.
                     </td>
                   </tr>
                 )}

@@ -60,11 +60,11 @@
     "cpf-cnpj-validator": "^1.0.3"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.67.0",
+    "@typescript-eslint/parser": "^8.67.0",
     "@types/node": "^22.7.9",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^15.1.0",
     "postcss": "^8.4.47",
     "autoprefixer": "^10.4.20",
     "prettier": "^3.3.3",
