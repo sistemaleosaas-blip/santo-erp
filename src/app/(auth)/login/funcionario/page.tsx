@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { LoginFuncionarioForm } from "@/components/site/login-funcionario-form";
 
@@ -9,7 +10,9 @@ export default function LoginFuncionarioPage() {
         <CardDescription>Entre com seu CPF e a senha cadastrada pelo RH.</CardDescription>
       </CardHeader>
       <CardContent>
-        <LoginFuncionarioForm />
+        <Suspense fallback={null}>
+          <LoginFuncionarioForm />
+        </Suspense>
       </CardContent>
     </Card>
   );
